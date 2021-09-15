@@ -1,10 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Raleway&family=Roboto:wght@400;700&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: #24252a;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a.Return {
+    font-family: 'Allison', cursive;
+    font-size: 50px;
+    color: rgb(9,77,173);
 }
 
 li, a, button {
@@ -18,7 +28,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 10px 10%;
 }
 
 .logo {
@@ -57,7 +67,6 @@ button:hover {
 
    #images {
       position: relative;
-      float: ;
       left: 0;
       top: 0;
       width: 100%;
@@ -82,3 +91,25 @@ button:hover {
       75%{
         background-image: url(media/tractor2.jpg);
       }
+    }
+
+    @media (max-width: 900px) {
+        a.Return {
+            font-size: 30px;
+        }
+    
+        li, a, button {
+            font-size: 12px;
+        }
+    }
+
+@media (max-width: 650px) {
+    a.Return {
+        font-size: 15px;
+    }
+    
+    li, a, button {
+        font-size: 8px;
+}
+
+}
