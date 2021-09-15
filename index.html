@@ -11,15 +11,20 @@
 <body>
     <header>
         <a class="Return" href="#">Farmer Dean's BlueBerries</a>
-        <!-- <img class="logo" src="media/NSFarmLogo.jpeg" alt=""> -->
-        <nav>
-            <ul id="NavLinks">
+        <nav class="navbar">
+            <ul class="NavLinks">
                 <li><a href="">Products</a></li>
                 <li><a href="">Blog</a></li>
                 <li><a href="">About</a></li>
+                <a class="cta" href=""><button>Contact</button></a>
             </ul>
+            <div class="navicon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
         </nav>
-        <a class="cta" href=""><button>Contact</button></a>
+
     </header>
 
     <div id="container">
@@ -27,8 +32,21 @@
         <div id="images">
         </div>
 
+        <div class="hometxt">
+            <h1 class="Hometext">Farmer Dean's Blueberries</h1>
+            <p>Naturally Grown Blueberries from Maine</p>
+        </div>
     </div>
 
-</header>
+<script>
+const nav = document.querySelector(".NavLinks");
+const navIcon = document.querySelector(".navicon");
+
+navIcon.addEventListener("click", () => {
+    nav.classList.toggle("navShow");
+    navIcon.classList.toggle("open");
+    })
+
+</script>
 </body>
 </html>
